@@ -34,6 +34,13 @@
         <!-- Navbar-Font -->
         <link rel="stylesheet" href="../../fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css">
         <!-- //Fonts -->
+
+
+        <style>
+            .seccion{
+                padding-top: 110px;
+              }
+        </style>
     </head>
     <body>
 
@@ -41,7 +48,7 @@
         <div class="header agileits w3layouts" id="home">
 
             <!-- Navbar -->
-            <nav class="navbar navbar-default w3l aits wow bounceInUp agileits w3layouts navbar-fixed-top">
+            <nav class="navbar navbar-default w3l aits wow bounceInUp agileits w3layouts navbar-fixed-top" style="z-index: 99999;">
                 <div class="container">
 
                     <div class="navbar-header agileits w3layouts">
@@ -57,9 +64,11 @@
                     <div id="navbar" class="navbar-collapse agileits w3layouts navbar-right collapse">
                         <ul class="nav agileits w3layouts navbar-nav">
                             <li class="active"> @Html.ActionLink("Inicio", "Index", "Home") </li>
-                            <li> @Html.ActionLink("About", "About", "About")</li>
-                            <li> @Html.ActionLink("Cocinas", "CocinaInicio", "Cocinas") </li>
+                            <li> <a href="../Ofertas/Ofertas"> Ofertas </a> </li>
                             <li> @Html.ActionLink("Galería", "Galeria", "Galeria") </li>
+                            <li> @Html.ActionLink("Facilidades", "CocinaInicio", "Cocinas") </li>
+                            <li> @Html.ActionLink("Habitaciones", "Habitaciones", "Habitaciones") </li>
+                            <li>@Html.ActionLink("Acerca de nosotros", "AcercaDeNosotros", "AcercaDeNosotros")</li>
                             <li>@Html.ActionLink("Contáctenos", "Contactenos", "Contactenos")</li>
                         </ul>
                     </div>
