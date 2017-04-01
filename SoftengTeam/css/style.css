@@ -83,13 +83,13 @@ a:focus, a:hover {
 /*-- Navbar --*/
 
 .navbar-default {
-	position: absolute;
-	z-index: 99999;
+	/*position: absolute;*/
+	/*z-index: 99999;*/
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0.88);
 	border: none;
 	border-radius: 0;
-	margin: 0;
+	/*margin: 0;*/
 	padding: 20px 0;
 }
 
