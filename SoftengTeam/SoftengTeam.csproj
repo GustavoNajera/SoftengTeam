@@ -183,8 +183,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\FacilidadesController.cs" />
+    <Compile Include="Controllers\HabitacionesController.cs" />
     <Compile Include="Controllers\OfertasController.cs" />
-    <Compile Include="Controllers\CocinasController.cs" />
     <Compile Include="Controllers\ContactenosController.cs" />
     <Compile Include="Controllers\GaleriaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -202,11 +203,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Views\Galeria\Galeria.cshtml" />
-    <Content Include="Views\Cocinas\CocinaInicio.cshtml" />
+    <Content Include="Views\Facilidades\Facilidades.cshtml" />
     <Content Include="Views\ClaseMaster\PaginaGeneralDiseño.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Ofertas\Ofertas.cshtml" />
     <Content Include="Views\Contactenos\Contactenos.cshtml" />
+    <Content Include="Views\Habitaciones\HabitacionGeneral.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

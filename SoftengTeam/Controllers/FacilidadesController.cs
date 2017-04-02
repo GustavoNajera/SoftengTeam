@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace SoftengTeam.Controllers
 {
-    public class CocinasController : Controller
+    public class FacilidadesController : Controller
     {
-        // GET: Cocinas
-        public ActionResult CocinaInicio()
+        // GET: Facilidades
+        public ActionResult Facilidades()
         {
             return View();
         }
