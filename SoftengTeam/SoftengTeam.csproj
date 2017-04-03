@@ -90,6 +90,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\animate.css" />
+    <Content Include="css\blueimp-gallery-indicator.css" />
+    <Content Include="css\blueimp-gallery-video.css" />
+    <Content Include="css\blueimp-gallery.css" />
+    <Content Include="css\blueimp-gallery.min.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\chocolat.css" />
     <Content Include="css\jquery-ui.css" />
@@ -167,10 +171,27 @@
     <Content Include="images\team-4.jpg" />
     <Content Include="images\tick.png" />
     <Content Include="images\to-top.png" />
+    <Content Include="img\error.png" />
+    <Content Include="img\error.svg" />
+    <Content Include="img\loading.gif" />
+    <Content Include="img\play-pause.png" />
+    <Content Include="img\play-pause.svg" />
+    <Content Include="img\video-play.png" />
+    <Content Include="img\video-play.svg" />
+    <Content Include="js\blueimp-gallery-fullscreen.js" />
+    <Content Include="js\blueimp-gallery-indicator.js" />
+    <Content Include="js\blueimp-gallery-video.js" />
+    <Content Include="js\blueimp-gallery-vimeo.js" />
+    <Content Include="js\blueimp-gallery-youtube.js" />
+    <Content Include="js\blueimp-gallery.js" />
+    <Content Include="js\blueimp-gallery.min.js" />
+    <Content Include="js\blueimp-helper.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\easing.js" />
     <Content Include="js\jquery-2.1.4.min.js" />
     <Content Include="js\jquery-ui.js" />
+    <Content Include="js\jquery.blueimp-gallery.js" />
+    <Content Include="js\jquery.blueimp-gallery.min.js" />
     <Content Include="js\jquery.chocolat.js" />
     <Content Include="js\jquery.magnific-popup.js" />
     <Content Include="js\jquery.min.js" />
@@ -192,6 +213,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Imagen.cs" />
     <Compile Include="Models\Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -209,6 +231,9 @@
     <Content Include="Views\Ofertas\Ofertas.cshtml" />
     <Content Include="Views\Contactenos\Contactenos.cshtml" />
     <Content Include="Views\Habitaciones\HabitacionGeneral.cshtml" />
+    <Content Include="css\blueimp-gallery.min.css.map" />
+    <Content Include="js\blueimp-gallery.min.js.map" />
+    <Content Include="js\jquery.blueimp-gallery.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
