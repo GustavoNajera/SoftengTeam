@@ -9,9 +9,11 @@ namespace SoftengTeam.Controllers
     public class HabitacionesController : Controller
     {
         // GET: Habitaciones
-        public ActionResult HabitacionGeneral()
+        public ActionResult HabitacionDetalle()
         {
             return View();
         }
+
+        
     }
 }

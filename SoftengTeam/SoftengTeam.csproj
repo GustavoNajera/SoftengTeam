@@ -110,6 +110,9 @@
     <Content Include="images\close.png" />
     <Content Include="images\cuisines.jpg" />
     <Content Include="images\date-icon.png" />
+    <Content Include="images\DeluxeBathroom.jpg" />
+    <Content Include="images\DeluxeDoubleH1.jpg" />
+    <Content Include="images\DeluxeKingH1.jpg" />
     <Content Include="images\down.png" />
     <Content Include="images\footer.jpg" />
     <Content Include="images\gallery-1.jpg" />
@@ -127,7 +130,10 @@
     <Content Include="images\icon1.png" />
     <Content Include="images\icon3.png" />
     <Content Include="images\img-sprite.png" />
+    <Content Include="images\jacuzzi.jpg" />
     <Content Include="images\location.jpg" />
+    <Content Include="images\piscinaInfantil.jpg" />
+    <Content Include="images\piscinaPrincipal.jpg" />
     <Content Include="images\project-1.jpg" />
     <Content Include="images\project-10.jpg" />
     <Content Include="images\project-2.jpg" />
@@ -138,6 +144,9 @@
     <Content Include="images\project-7.jpg" />
     <Content Include="images\project-8.jpg" />
     <Content Include="images\project-9.jpg" />
+    <Content Include="images\restauranteBuffet.jpg" />
+    <Content Include="images\restaurantesCarta.jpg" />
+    <Content Include="images\restauranteSnacks.jpg" />
     <Content Include="images\room-1.jpg" />
     <Content Include="images\room-2.jpg" />
     <Content Include="images\room-3.jpg" />
@@ -161,6 +170,13 @@
     <Content Include="images\specials-7.jpg" />
     <Content Include="images\specials-8.jpg" />
     <Content Include="images\specials-9.jpg" />
+    <Content Include="images\StandardBathroom.jpg" />
+    <Content Include="images\StandardDoubleH1.jpg" />
+    <Content Include="images\StandardKingH1.jpg" />
+    <Content Include="images\Suite1.jpg" />
+    <Content Include="images\Suite2.jpg" />
+    <Content Include="images\SuiteBathroom.jpg" />
+    <Content Include="images\SuiteFamiliar1.jpg" />
     <Content Include="images\team-1.jpg" />
     <Content Include="images\team-2.jpg" />
     <Content Include="images\team-3.jpg" />
@@ -208,7 +224,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Ofertas\Ofertas.cshtml" />
     <Content Include="Views\Contactenos\Contactenos.cshtml" />
-    <Content Include="Views\Habitaciones\HabitacionGeneral.cshtml" />
+    <Content Include="Views\Habitaciones\HabitacionDetalle.cshtml" />
+    <Content Include="Views\Habitaciones\HabitacionDetalle - Copy.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
