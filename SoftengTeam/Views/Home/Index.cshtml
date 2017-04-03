@@ -60,7 +60,56 @@
                 padding-left: 100px;
                 padding-right: 100px;
             }
+
+            .publicidad{
+                z-index: 99999;
+	            background-color: rgba(255, 255, 255, 0.88);
+                max-width: 300px;
+	            border: none;
+                border-bottom-right-radius: 10px;
+                margin-left: 0px;
+                margin-top: 89px;
+	            padding: 10px 10px;
+            }
+
+            .publicidad > p{
+                font-family: cursive;
+                font-weight: 800;
+                font-size: 19px;
+                color: #1dc8d9;
+            }
+
+            .publicidad-img {
+                width:100%;
+            }
+            .cursor{
+                border: 0px;
+                background-color: rgba(255, 255, 255, 0.10);
+                border-radius: 10px;
+            }
+            .cursor:hover{
+                color: #fff;
+                background-color: #1dc8d9;
+            }
+            .img-publicidad-footer >img {
+                height:150px;
+                width:auto;
+                margin-right: 10px;
+            }
         </style>
+
+        <script>
+
+            // funcion para aumentar la fuente
+            function mostrar() {
+                document.getElementById("publicidad-id").style.display = 'block';
+            }
+
+            // funcion para disminuir la fuente
+            function ocultar() {
+                document.getElementById('publicidad-id').style.display = 'none';
+            }
+        </script>
     </head>
     <body>
 
@@ -68,7 +117,7 @@
         <div class="header agileits w3layouts" id="home">
 
             <!-- Navbar -->
-            <nav class="navbar navbar-default w3l aits wow bounceInUp agileits w3layouts navbar-fixed-top" style="z-index: 99999;">
+            <nav class="navbar navbar-default w3l aits wow bounceInUp agileits w3layouts navbar-fixed-top">
                 <div class="container">
 
                     <div class="navbar-header agileits w3layouts">
@@ -93,7 +142,41 @@
                     </div>
 
                 </div>
+
             </nav>
+           
+            @*Publicidad*@
+             <div class="navbar-fixed-top text-center publicidad wow bounceInUp">
+
+                <p> Publicidad 
+                    <input class="cursor" type="button" value="+" onclick="mostrar()">
+                    <input class="cursor" type="button" value="-" onclick="ocultar()">
+                 <p>
+
+                <div class="slider-2 agileits w3layouts publicidad-img" id="publicidad-id">
+                    <ul class="rslides agileits w3layouts" id="slider2">
+                        <li>
+                            <img src="../../images/project-1.jpg" alt="Agileits W3layouts">
+                        </li>
+                        <li>
+                            <img src="../../images/project-2.jpg" alt="Agileits W3layouts">
+                        </li>
+                        <li>
+                            <img src="../../images/project-3.jpg" alt="Agileits W3layouts">
+                        </li>
+                        <li>
+                            <img src="../../images/project-4.jpg" alt="Agileits W3layouts">
+                        </li>
+                        <li>
+                            <img src="../../images/project-5.jpg" alt="Agileits W3layouts">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            @*FIN Publicidad*@
+            
+
+
             <!-- //Navbar -->
             <!-- Slider1 -->
             <div class="slider agileits w3layouts" id="seccion-inicio" >
@@ -139,6 +222,10 @@
 
         </div>
         <!-- //Header -->
+
+        
+
+
         <!-- Team -->
         <div class="team agileits w3layouts seccion" id="seccion-ofertas">
             <div class="container">
@@ -409,13 +496,35 @@
         </div>
         <!-- //Habitaciones -->
         
+        
         <!-- Footer -->
         <div class="footer agileits w3layouts">
-            <div class="container text-center">
-                <p>&copy; 2017 High Garden Resort </></p>
+            <div class="container">
+
+                <div class="col-md-12 col-sm-12 agileits w3layouts footer-grids">
+                    <div class="col-md-12 col-sm-12 footer-grid agileits w3layouts footer-grid-1 wow fadeInUp">
+                        
+                        <MARQUEE class="img-publicidad-footer">
+                            <img src="../../images/project-4.jpg">
+                            <img src="../../images/project-4.jpg">
+                            <img src="../../images/project-4.jpg">
+                            <img src="../../images/project-4.jpg">
+                        </MARQUEE>
+
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 footer-grids agileits w3layouts copyright wow fadeInUp">
+                    <p>&copy; 2017 High Garden Resort</p>
+                </div>
+                <div class="clearfix"></div>
+
             </div>
         </div>
         <!-- //Footer -->
+
     </body>
 </html>
 

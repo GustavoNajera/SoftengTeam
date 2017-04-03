@@ -35,12 +35,84 @@
         <link rel="stylesheet" href="../../fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css">
         <!-- //Fonts -->
 
-
         <style>
-            .seccion{
+            .seccion {
                 padding-top: 110px;
-              }
+            }
+
+            .h2-habitacion {
+                color: #1dc8d9;
+                margin-top: 20px;
+                margin-bottom: 0px;
+            }
+
+            .ma {
+                margin-bottom: 0px;
+            }
+
+            .ma-top {
+                margin-top: 10px;
+            }
+
+            .btn-more-info {
+                margin-bottom: 0px;
+                margin-top: 30px;
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+
+            .publicidad {
+                z-index: 99999;
+                background-color: rgba(255, 255, 255, 0.88);
+                max-width: 300px;
+                border: none;
+                border-bottom-right-radius: 10px;
+                margin-left: 0px;
+                margin-top: 89px;
+                padding: 10px 10px;
+            }
+
+                .publicidad > p {
+                    font-family: cursive;
+                    font-weight: 800;
+                    font-size: 19px;
+                    color: #1dc8d9;
+                }
+
+            .publicidad-img {
+                width: 100%;
+            }
+
+            .cursor {
+                border: 0px;
+                background-color: rgba(255, 255, 255, 0.10);
+                border-radius: 10px;
+            }
+
+                .cursor:hover {
+                    color: #fff;
+                    background-color: #1dc8d9;
+                }
+
+            .img-publicidad-footer > img {
+                height: 150px;
+                width: auto;
+                margin-right: 10px;
+            }
         </style>
+
+        <script>
+
+            // funcion para aumentar la fuente
+            function mostrar() {
+                document.getElementById("publicidad-id").style.display = 'block';
+            }
+
+            // funcion para disminuir la fuente
+            function ocultar() {
+                document.getElementById('publicidad-id').style.display = 'none';
+            }
+        </script>
     </head>
     <body>
 
@@ -74,6 +146,38 @@
 
                 </div>
             </nav>
+
+
+            @*Publicidad*@
+            <div class="navbar-fixed-top text-center publicidad wow bounceInUp">
+
+                <p>
+                    Publicidad
+                    <input class="cursor" type="button" value="+" onclick="mostrar()">
+                    <input class="cursor" type="button" value="-" onclick="ocultar()">
+                <p>
+
+                    <div class="slider-2 agileits w3layouts publicidad-img" id="publicidad-id">
+                        <ul class="rslides agileits w3layouts" id="slider2">
+                            <li>
+                                <img src="../../images/project-1.jpg" alt="Agileits W3layouts">
+                            </li>
+                            <li>
+                                <img src="../../images/project-2.jpg" alt="Agileits W3layouts">
+                            </li>
+                            <li>
+                                <img src="../../images/project-3.jpg" alt="Agileits W3layouts">
+                            </li>
+                            <li>
+                                <img src="../../images/project-4.jpg" alt="Agileits W3layouts">
+                            </li>
+                            <li>
+                                <img src="../../images/project-5.jpg" alt="Agileits W3layouts">
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+            @*FIN Publicidad*@
             <!-- //Navbar -->
 
             @RenderBody()
@@ -81,7 +185,7 @@
             <!-- Footer -->
             <div class="footer agileits w3layouts">
                 <div class="container text-center">
-                    <p>&copy; 2017 High Garden Resort </></p>
+                    <p>&copy; 2017 High Garden Resort</p>
                 </div>
             </div>
             <!-- //Footer -->
