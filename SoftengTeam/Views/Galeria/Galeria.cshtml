@@ -1,0 +1,60 @@
+﻿@{
+    Layout = "~/Views/ClaseMaster/PaginaGeneralDiseño.cshtml";
+}
+    <link rel="stylesheet" href="../../css/blueimp-gallery.min.css">
+
+    <!-- MENU -->
+
+        <!-- Banner -->
+        <div class="banner agileits w3layouts">
+            <img src="../../images/banner.jpg" alt="Agileits W3layouts">
+            <h1 class="wow agileits w3layouts fadeInDown">Galería</h1>
+        </div>
+        <!-- //Banner -->
+
+    </div>
+    <!-- //Header -->
+    <!-- Rooms -->
+    <div class="rooms agileits w3layouts">
+        <div class="container">
+
+            <div class="rooms-grids agileits w3layouts">
+                <div class="rooms-grid agileits w3layouts rooms-grid-1 wow fadeInRight">
+                    <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+                        <div class="slides"></div>
+                        <h3 class="title"></h3>
+                        <a class="prev">‹</a>
+                        <a class="next">›</a>
+                        <a class="play-pause"></a>
+                        <ol class="indicator"></ol>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="links" class="links">
+    <a href="../../images/booking.jpg" title="Libro">
+    </a>
+    <a href="../../images/cuisines.jpg" title="Cocinas">
+    </a>
+    </div>
+    <!-- Rooms -->
+   
+    <!-- FOOTER -->
+
+    <!--Galeria-->
+
+    <script type="text/javascript" src="../../js/blueimp-gallery.min.js"></script>
+
+
+    <script>
+        blueimp.Gallery(
+            document.getElementById('links').getElementsByTagName('a'),
+            {
+                container: '#blueimp-gallery-carousel',
+                carousel: true
+            }
+        );
+</script>

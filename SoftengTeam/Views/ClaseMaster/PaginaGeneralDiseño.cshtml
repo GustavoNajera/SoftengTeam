@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <!DOCTYPE html>
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <!-- Meta-Tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Tropical Resorts a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <!-- //Meta-Tags -->
+        <!-- Custom-Stylesheet-Links -->
+
+        <!-- Gallery-Popup-CSS -->
+        <link rel="stylesheet" href="../../css/chocolat.css" type="text/css" media="all">
+        <!-- Bootstrap-CSS -->
+        <link rel="stylesheet" href="../../css/bootstrap.min.css" type="text/css" media="all">
+        <!-- Index-Page-CSS -->
+        <link rel="stylesheet" href="../../css/style.css" type="text/css" media="all">
+        <!-- Animate.CSS -->
+        <link rel="stylesheet" href="../../css/animate.css" type="text/css" media="all">
+        <!-- //Custom-Stylesheet-Links -->
+        <!-- Fonts -->
+        <!-- Body-Font -->
+        <link rel="stylesheet" href="../../fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" type="text/css">
+        <!-- Logo-Font -->
+        <link rel="stylesheet" href="../../fonts.googleapis.com/css?family=Cinzel+Decorative:400,900,700" type="text/css">
+        <!-- Navbar-Font -->
+        <link rel="stylesheet" href="../../fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css">
+        <!-- //Fonts -->
+
+        <style>
+            .seccion {
+                padding-top: 110px;
+            }
+
+            .h2-habitacion {
+                color: #1dc8d9;
+                margin-top: 20px;
+                margin-bottom: 0px;
+            }
+
+            .ma {
+                margin-bottom: 0px;
+            }
+
+            .ma-top {
+                margin-top: 10px;
+            }
+
+            .btn-more-info {
+                margin-bottom: 0px;
+                margin-top: 30px;
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+
+            .publicidad {
+                z-index: 99999;
+                background-color: rgba(255, 255, 255, 0.88);
+                max-width: 300px;
+                border: none;
+                border-bottom-right-radius: 10px;
+                margin-left: 0px;
+                margin-top: 89px;
+                padding: 10px 10px;
+            }
+
+                .publicidad > p {
+                    font-family: cursive;
+                    font-weight: 800;
+                    font-size: 19px;
+                    color: #1dc8d9;
+                }
+
+            .publicidad-img {
+                width: 100%;
+            }
+
+            .cursor {
+                border: 0px;
+                background-color: rgba(255, 255, 255, 0.10);
+                border-radius: 10px;
+            }
+
+                .cursor:hover {
+                    color: #fff;
+                    background-color: #1dc8d9;
+                }
+
+            .img-publicidad-footer > img {
+                height: 150px;
+                width: auto;
+                margin-right: 10px;
+            }
+        </style>
+
+        <script>
+
+            // funcion para aumentar la fuente
+            function mostrar() {
+                document.getElementById("publicidad-id").style.display = 'block';
+                document.getElementById('publicidad-btn-id').style.width = "300px";
+            }
+
+            // funcion para disminuir la fuente
+            function ocultar() {
+                document.getElementById('publicidad-id').style.display = 'none';
+                document.getElementById('publicidad-btn-id').style.width = '100px';
+            }
+        </script>
+    </head>
+    <body>
+
+        <!-- Header -->
+        <div class="header agileits w3layouts" id="home">
+
+            <!-- Navbar -->
+            <nav class="navbar navbar-default w3l aits wow bounceInUp agileits w3layouts navbar-fixed-top" style="z-index: 99999;">
+                <div class="container">
+
+                    <div class="navbar-header agileits w3layouts">
+                        <button type="button" class="navbar-toggle agileits w3layouts collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                            <span class="sr-only agileits w3layouts">Toggle navigation</span>
+                            <span class="icon-bar w3l"></span>
+                            <span class="icon-bar aits"></span>
+                            <span class="icon-bar w3laits"></span>
+                        </button>
+                        <a class="navbar-brand agileits w3layouts" href="/">High Garden Resort</a>
+                    </div>
+
+                    <div id="navbar" class="navbar-collapse agileits w3layouts navbar-right collapse">
+                        <ul class="nav agileits w3layouts navbar-nav">
+                            <li> <a href="/"> Inicio </a> </li>
+                            <li> <a href="/Ofertas/Ofertas"> Ofertas </a> </li>
+                            <li> <a href="/Galeria/Galeria"> Galeria </a> </li>
+                            <li> <a href="/Facilidades/Facilidades"> Facilidades </a> </li>
+                            <li> <a href="/Habitaciones/HabitacionGeneral"> Habitaciones </a> </li>
+                            <li> <a href="/Contactenos/Contactenos"> Contáctenos </a> </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+
+           @*Publicidad*@
+        <div class="navbar-fixed-top text-center publicidad wow bounceInUp" id="publicidad-btn-id">
+
+            <span class="glyphicon glyphicon-chevron-down cursor" aria-hidden="true" onclick="mostrar()"></span>
+            <span class="glyphicon glyphicon-chevron-up cursor" aria-hidden="true" onclick="ocultar()"></span>
+
+            <div class="slider-2 agileits w3layouts publicidad-img" id="publicidad-id">
+                <ul class="rslides agileits w3layouts" id="slider2">
+                    <li>
+                        <img src="../../images/project-1.jpg" alt="Agileits W3layouts">
+                    </li>
+                    <li>
+                        <img src="../../images/project-2.jpg" alt="Agileits W3layouts">
+                    </li>
+                    <li>
+                        <img src="../../images/project-3.jpg" alt="Agileits W3layouts">
+                    </li>
+                    <li>
+                        <img src="../../images/project-4.jpg" alt="Agileits W3layouts">
+                    </li>
+                    <li>
+                        <img src="../../images/project-5.jpg" alt="Agileits W3layouts">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        @*FIN Publicidad*@
+            <!-- //Navbar -->
+
+            @RenderBody()
+
+            <!-- Footer -->
+            <div class="footer agileits w3layouts">
+                <div class="container text-center">
+                    <p>&copy; 2017 High Garden Resort</p>
+                </div>
+            </div>
+            <!-- //Footer -->
+</body>
+</html>
+
+    <!-- Custom-JavaScript-File-Links -->
+    <!-- Default-JavaScript -->
+    <script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+    <!-- Bootstrap-JavaScript -->
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+    <!-- Animate.CSS-JavaScript -->
+    <script src="../../js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <!-- //Animate.CSS-JavaScript -->
+    <!-- Slider-JavaScript -->
+    <script src="../../js/responsiveslides.min.js"></script>
+    <script>
+    $(function () {
+        $("#slider1, #slider2, #slider3, #slider4").responsiveSlides({
+            auto: true,
+            nav: true,
+            speed: 1500,
+            namespace: "callbacks",
+            pager: true,
+        });
+    });
+    </script>
+    <!-- //Slider-JavaScript -->
+    <!-- Slide-To-Top JavaScript (No-Need-To-Change) -->
+    <script type="text/javascript">
+    $(document).ready(function () {
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 100,
+            easingType: 'linear'
+        };
+        $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+    </script>
+    <a href="#" id="toTop" class="agileits w3layouts" style="display: block;"> <span id="toTopHover" style="opacity: 0;"> </span></a>
+    <!-- //Slide-To-Top JavaScript -->
+    <!-- Smooth-Scrolling-JavaScript -->
+    <script type="text/javascript" src="../../js/move-top.js"></script>
+    <script type="text/javascript" src="../../js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll, .navbar li a, .footer li a").click(function (event) {
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!-- //Smooth-Scrolling-JavaScript -->
+    <!-- //Custom-JavaScript-File-Links -->
+
+
+
+    <!-- //Animate.CSS-JavaScript -->
+    <!-- Portfolio-Popup-Box-JavaScript -->
+    <script src="../../js/modernizr.custom.97074.js"></script>
+    <script src="../../js/jquery.chocolat.js"></script>
+    <script type="text/javascript">
+				$(function() {
+					$('.special-grid a').Chocolat();
+				});
+    </script>
+    <!-- //Portfolio-Popup-Box-JavaScript -->
+    <!-- Show-More-JavaScript-File -->
+    <script>
+				$(document).ready(function () {
+					size_li = $("#myList li").size();
+					x=1;
+					$('#myList li:lt('+x+')').show();
+					$('#loadMore').click(function () {
+						x= (x+1 <= size_li) ? x+1 : size_li;
+						$('#myList li:lt('+x+')').show();
+					});
+					$('#showLess').click(function () {
+						x=(x-1<0) ? 1 : x-1;
+						$('#myList li').not(':lt('+x+')').hide();
+					});
+				});
+    </script>
+
+    <!-- Date-Picker-JavaScript -->
+    <script src="../../js/jquery-ui.js"></script>
+    <script>
+				$(function() {
+					$( "#datepicker,#datepicker1,#datepicker2" ).datepicker();
+				});
+    </script>
+    <!-- //Date-Picker-JavaScript -->
+    <!-- //Necessary-JavaScript-Files-&-Links -->

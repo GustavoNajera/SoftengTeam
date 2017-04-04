@@ -1,0 +1,595 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <!DOCTYPE html>
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <!-- Meta-Tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Tropical Resorts a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <!-- //Meta-Tags -->
+        <!-- Custom-Stylesheet-Links -->
+        <!-- Gallery-Popup-CSS -->
+        <link rel="stylesheet" href="../../css/chocolat.css" type="text/css" media="all">
+        <!-- Bootstrap-CSS -->
+        <link rel="stylesheet" href="../../css/bootstrap.min.css" type="text/css" media="all">
+        <!-- Index-Page-CSS -->
+        <link rel="stylesheet" href="../../css/style.css" type="text/css" media="all">
+        <!-- Animate.CSS -->
+        <link rel="stylesheet" href="../../css/animate.css" type="text/css" media="all">
+        <!-- //Custom-Stylesheet-Links -->
+        <!-- Fonts -->
+        <!-- Body-Font -->
+        <link rel="stylesheet" href="../../fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" type="text/css">
+        <!-- Logo-Font -->
+        <link rel="stylesheet" href="../../fonts.googleapis.com/css?family=Cinzel+Decorative:400,900,700" type="text/css">
+        <!-- Navbar-Font -->
+        <link rel="stylesheet" href="../../fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css">
+        <!-- //Fonts -->
+
+
+        <style>
+            .seccion {
+                padding-top: 110px;
+            }
+
+            .h2-habitacion{
+                color: #1dc8d9;
+                margin-top: 20px;
+                margin-bottom:0px;
+            }
+            .ma{
+                margin-bottom:0px;
+            }
+
+            .ma-top{
+                margin-top: 10px;
+            }
+
+            .btn-more-info {
+                margin-bottom: 0px;
+                margin-top: 30px;
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+
+            .publicidad{
+                z-index: 99999;
+	            background-color: rgba(255, 255, 255, 0.88);
+                max-width: 300px;
+	            border: none;
+                border-bottom-right-radius: 10px;
+                margin-left: 0px;
+                margin-top: 89px;
+	            padding: 10px 10px;
+            }
+
+            .publicidad > p{
+                font-family: cursive;
+                font-weight: 800;
+                font-size: 19px;
+                color: #1dc8d9;
+            }
+
+            .publicidad-img {
+                width:100%;
+            }
+            .cursor{
+                border: 0px;
+                background-color: rgba(255, 255, 255, 0.10);
+                border-radius: 10px;
+            }
+            .cursor:hover{
+                color: #fff;
+                background-color: #1dc8d9;
+            }
+            .img-publicidad-footer >img {
+                height:150px;
+                width:auto;
+                margin-right: 10px;
+            }
+        </style>
+
+        <script>
+
+            // funcion para aumentar la fuente
+            function mostrar() {
+                document.getElementById("publicidad-id").style.display = 'block';
+                document.getElementById('publicidad-btn-id').style.width = "300px";
+            }
+
+            // funcion para disminuir la fuente
+            function ocultar() {
+                document.getElementById('publicidad-id').style.display = 'none';
+                document.getElementById('publicidad-btn-id').style.width = '100px';
+            }
+        </script>
+    </head>
+    <body>
+
+        <!-- Header -->
+        <div class="header agileits w3layouts" id="home">
+
+            <!-- Navbar -->
+            <nav class="navbar navbar-default w3l aits wow bounceInUp agileits w3layouts navbar-fixed-top">
+                <div class="container">
+
+                    <div class="navbar-header agileits w3layouts">
+                        <button type="button" class="navbar-toggle agileits w3layouts collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                            <span class="sr-only agileits w3layouts">Toggle navigation</span>
+                            <span class="icon-bar w3l"></span>
+                            <span class="icon-bar aits"></span>
+                            <span class="icon-bar w3laits"></span>
+                        </button>
+                        <a class="navbar-brand agileits w3layouts" href="/">High Garden Resort</a>
+                    </div>
+
+                    <div id="navbar" class="navbar-collapse agileits w3layouts navbar-right collapse">
+                        <ul class="nav agileits w3layouts navbar-nav">
+                            <li> <a class="page-scroll" href="#seccion-inicio"> Inicio </a>  </li>
+                            <li> <a class="page-scroll" href="#seccion-ofertas"> Ofertas </a> </li>
+                            <li><a class="page-scroll" href="#seccion-galeria"> Galería </a> </li>
+                            <li><a class="page-scroll" href="#seccion-facilidades"> Facilidades </a>  </li>
+                            <li> <a class="page-scroll" href="#seccion-habitaciones"> Habitaciones </a> </li>
+                            <li><a href="/Contactenos/Contactenos"> Contáctenos </a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </nav>
+           
+            @*Publicidad*@
+             <div class="navbar-fixed-top text-center publicidad wow bounceInUp" id="publicidad-btn-id">
+                
+                 <span class="glyphicon glyphicon-chevron-down cursor" aria-hidden="true"  onclick="mostrar()"></span>
+                 <span class="glyphicon glyphicon-chevron-up cursor" aria-hidden="true" onclick="ocultar()"></span>
+
+                     <div class="slider-2 agileits w3layouts publicidad-img" id="publicidad-id">
+                         <ul class="rslides agileits w3layouts" id="slider2">
+                             <li>
+                                 <img src="../../images/project-1.jpg" alt="Agileits W3layouts">
+                             </li>
+                             <li>
+                                 <img src="../../images/project-2.jpg" alt="Agileits W3layouts">
+                             </li>
+                             <li>
+                                 <img src="../../images/project-3.jpg" alt="Agileits W3layouts">
+                             </li>
+                             <li>
+                                 <img src="../../images/project-4.jpg" alt="Agileits W3layouts">
+                             </li>
+                             <li>
+                                 <img src="../../images/project-5.jpg" alt="Agileits W3layouts">
+                             </li>
+                         </ul>
+                     </div>
+</div>
+            @*FIN Publicidad*@
+            
+
+
+            <!-- //Navbar -->
+            <!-- Slider1 -->
+            <div class="slider agileits w3layouts" id="seccion-inicio" >
+                <div class="slider-1 agileits w3layouts">
+                    <ul class="rslides agileits w3layouts" id="slider1">
+                        <li>
+                            <img src="../../images/slide-1.jpg" alt="Agileits W3layouts">
+                            <div class="layer agileits w3layouts"></div>
+                            <div class="caption agileits w3layouts">
+                                <h3>Welcome To <span>TROPICAL RESORTS</span></h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../../images/slide-2.jpg" alt="Agileits W3layouts">
+                            <div class="caption agileits w3layouts">
+                                <h3>Choose The Best Resort For You</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../../images/slide-3.jpg" alt="Agileits W3layouts">
+                            <div class="caption agileits w3layouts">
+                                <h3>Stay Right Next To The Exotic Beaches</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../../images/slide-4.jpg" alt="Agileits W3layouts">
+                            <div class="caption agileits w3layouts">
+                                <h3>Spend The Best Moments In Our Resorts</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../../images/slide-5.jpg" alt="Agileits W3layouts">
+                            <div class="layer agileits w3layouts"></div>
+                            <div class="caption agileits w3layouts">
+                                <h3>Experience The Best Luxury & Hospitality</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //Slider1 -->
+            <div class="clearfix"></div>
+
+        </div>
+        <!-- //Header -->
+
+        
+
+
+        <!-- Team -->
+        <div class="team agileits w3layouts seccion" id="seccion-ofertas">
+            <div class="container">
+
+                <h3>Ofertas / Promociones</h3>
+
+                <div class="team-grids agileits w3layouts grid">
+                    <div class="col-md-4 col-sm-4 team-grid agileits w3layouts team-grid1 wow slideInUp">
+                        <figure class="effect-zoe agileits w3layouts">
+                            <img src="../../images/team-1.jpg" alt="Agileits W3layouts" />
+                            <figcaption>
+                                <h4>Oferta<span>Ejemplo</span></h4>
+                                <p class="description agileits w3layouts">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-4 team-grid agileits w3layouts team-grid2 wow slideInUp">
+                        <figure class="effect-zoe agileits w3layouts">
+                            <img src="../../images/team-2.jpg" alt="Agileits W3layouts" />
+                            <figcaption>
+                                <h4>Oferta 2 <span>Ejemplo</span></h4>
+                                <p class="description agileits w3layouts">It has roots in a piece of classical Latin literature from 45 BC.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4 col-sm-4 team-grid agileits w3layouts team-grid3 wow slideInUp">
+                        <figure class="effect-zoe agileits w3layouts">
+                            <img src="../../images/team-3.jpg" alt="Agileits W3layouts" />
+                            <figcaption>
+                                <h4>Tercera <span>Oferta</span></h4>
+                                <p class="description agileits w3layouts">Richard McClintock is a Latin professor at Hampden-Sydney College.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <a class="btn btn-success btn-lg" href="/Ofertas/Ofertas">Ver mas <span class="glyphicon glyphicon-arrow-right"></span></a>
+
+            </div>
+        </div>
+        <!-- //Team -->
+        <!-- Projects -->
+        <div class="projects agileits w3layouts seccion" id="seccion-galeria">
+            <div class="container">
+
+                <div class="col-md-8 col-sm-8 projects-grid agileits w3layouts projects-grid1 wow slideInLeft">
+                    <!-- Slider2 -->
+                    <div class="slider-2 agileits w3layouts">
+                        <ul class="rslides agileits w3layouts" id="slider2">
+                            <li>
+                                <img src="../../images/project-1.jpg" alt="Agileits W3layouts">
+                            </li>
+                            <li>
+                                <img src="../../images/project-2.jpg" alt="Agileits W3layouts">
+                            </li>
+                            <li>
+                                <img src="../../images/project-3.jpg" alt="Agileits W3layouts">
+                            </li>
+                            <li>
+                                <img src="../../images/project-4.jpg" alt="Agileits W3layouts">
+                            </li>
+                            <li>
+                                <img src="../../images/project-5.jpg" alt="Agileits W3layouts">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //Slider2 -->
+                    <!-- Slider3 -->
+                    <div class="slider-3 agileits w3layouts">
+                        <ul class="rslides agileits w3layouts" id="slider3">
+                            <li>
+                                <img src="../../images/project-6.jpg" alt="Agileits W3layouts">
+                            </li>
+                            <li>
+                                <img src="../../images/project-7.jpg" alt="Agileits W3layouts">
+                            </li>
+                            <li>
+                                <img src="../../images/project-8.jpg" alt="Agileits W3layouts">
+                            </li>
+                            <li>
+                                <img src="../../images/project-9.jpg" alt="Agileits W3layouts">
+                            </li>
+                            <li>
+                                <img src="../../images/project-10.jpg" alt="Agileits W3layouts">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //Slider3 -->
+                </div>
+
+                <div class="col-md-4 col-sm-4 projects-grid agileits w3layouts projects-grid2 wow slideInRight">
+                    <h1>Galería</h1>
+                    <h4>Imágnes seleccionadas para su disfrute</h4>
+                    <div class="h4-underline agileits w3layouts wow slideInLeft"></div>
+                    <p>Imágenes seleccionadas especialmente para usted, atardecer, mar cristalino, piscina, habitaciones y mas, todo al alcance de un click.</p>
+                    <a class="agileits w3layoutswow slideInLeft" href="/Galeria/Galeria">Ver mas <span class="glyphicon agileits w3layouts glyphicon-arrow-right" aria-hidden="true"></span></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- //Projects -->
+        <!-- Awards -->
+        <div class="awards agileits w3layouts seccion" id="seccion-facilidades">
+
+            <h3>Facilidades</h3>
+
+            <div class="awards-grids">
+                <div class="col-md-3 col-sm-3 awards-grid agileits w3layouts awards-grid-1 wow fadeInUp">
+                    <img class="wow agileits w3layouts slideInLeft" src="../../images/award-1.png" alt="Agileits W3layouts">
+                    <h4>BEST HOSPITALITY</h4>
+                    <div class="h4-underline agileits w3layouts wow slideInLeft"></div>
+                    <p>Matthew Miller</p>
+                    <p>CEO</p>
+                    <p>Miami Resort</p>
+                </div>
+                <div class="col-md-3 col-sm-3 awards-grid awards-grid-2 wow agileits w3layouts fadeInUp">
+                    <img class="wow agileits w3layouts slideInLeft" src="../../images/award-2.png" alt="Agileits W3layouts">
+                    <h4>BEST LUXURY HOTEL</h4>
+                    <div class="h4-underline wow agileits w3layouts slideInLeft"></div>
+                    <p>Jared Lato</p>
+                    <p>Head, Management</p>
+                    <p>Hawaii Resort</p>
+                </div>
+                <div class="col-md-3 col-sm-3 agileits w3layouts awards-grid awards-grid-3 wow fadeInUp">
+                    <img class="wow agileits w3layouts slideInLeft" src="../../images/award-3.png" alt="Agileits W3layouts">
+                    <h4>BEST BEACH RESORT</h4>
+                    <div class="h4-underline wow agileits w3layouts slideInLeft"></div>
+                    <p>Sebastian Smith</p>
+                    <p>Head, Management</p>
+                    <p>Bahamas Resort</p>
+                </div>
+                <div class="col-md-3 col-sm-3 agileits w3layouts awards-grid awards-grid-4 wow fadeInUp">
+                    <img class="wow slideInLeft agileits w3layouts" src="../../images/award-4.png" alt="Agileits W3layouts">
+                    <h4>BEST SEAFOOD</h4>
+                    <div class="h4-underline wow agileits w3layouts slideInLeft"></div>
+                    <p>Matt Daniels</p>
+                    <p>Chef de Cuisine</p>
+                    <p>Ibiza Resort</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="text-center">
+                <a class="btn btn-primary wow agileits w3layouts fadeInLeft btn-lg btn-more-info" href="/Facilidades/Facilidades">Detalles<span class="glyphicon agileits w3layouts glyphicon-arrow-right" aria-hidden="true"></span></a>
+            </div>
+        </div>
+        <!-- //Awards -->
+        
+
+        <!-- Habitaciones -->
+        <div class="details agileits w3layouts seccion" id="seccion-habitaciones">
+            <div class="container">
+
+                <h3>Habitaciones</h3>
+
+                <div class="details-grids agileits w3layouts">
+
+                    @* Primer habitación *@
+                    <div class="col-md-4 col-sm-4 details-grid agileits w3layouts details-grid-1 wow slideInUp">
+                        <div class=" details-grid1 agileits w3layouts">
+                            <div class="details-grid-image agileits w3layouts">
+
+                                <div class="slider-2 agileits w3layouts" style="width: 100%">
+                                    <ul class="rslides agileits w3layouts" id="slider2">
+                                        <li>
+                                            <img src="../../images/project-1.jpg" alt="Agileits W3layouts">
+                                        </li>
+                                        <li>
+                                            <img src="../../images/project-2.jpg" alt="Agileits W3layouts">
+                                        </li>
+                                        <li>
+                                            <img src="../../images/project-3.jpg" alt="Agileits W3layouts">
+                                        </li>
+                                        <li>
+                                            <img src="../../images/project-4.jpg" alt="Agileits W3layouts">
+                                        </li>
+                                        <li>
+                                            <img src="../../images/project-5.jpg" alt="Agileits W3layouts">
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="details-grid-info agileits w3layouts">
+                                <h2 class="h2-habitacion">Habitación Familiar</h2>
+                                <div class="h4-underline wow agileits w3layouts slideInLeft animated ma"></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore.</p>
+                            </div>
+                            <a class="btn btn-primary wow agileits w3layouts fadeInLeft" href="/Habitaciones/HabitacionGeneral">Detalles<span class="glyphicon agileits w3layouts glyphicon-arrow-right" aria-hidden="true"></span></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    @*Final de la primer habitación.*@
+
+
+                    
+                    @* Segunda habitación *@
+                    <div class="col-md-4 col-sm-4 details-grid agileits w3layouts details-grid-1 wow slideInUp">
+                        <div class=" details-grid1 agileits w3layouts">
+                            <div class="details-grid-image agileits w3layouts">
+
+                                <div class="slider-2 agileits w3layouts" style="width: 100%">
+                                    <ul class="rslides agileits w3layouts" id="slider2">
+                                        <li>
+                                            <img src="../../images/project-2.jpg" alt="Agileits W3layouts">
+                                        </li>
+                                        <li>
+                                            <img src="../../images/project-3.jpg" alt="Agileits W3layouts">
+                                        </li>
+                                        <li>
+                                            <img src="../../images/project-4.jpg" alt="Agileits W3layouts">
+                                        </li>
+                                        <li>
+                                            <img src="../../images/project-5.jpg" alt="Agileits W3layouts">
+                                        </li>
+                                        <li>
+                                            <img src="../../images/project-6.jpg" alt="Agileits W3layouts">
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="details-grid-info agileits w3layouts">
+                                <h2 class="h2-habitacion">Habitación individual</h2>
+                                <div class="h4-underline wow agileits w3layouts slideInLeft animated ma"></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et.</p>
+                            </div>
+                            <a class="btn btn-primary wow agileits w3layouts fadeInLeft" href="/Habitaciones/HabitacionGeneral">Detalles<span class="glyphicon agileits w3layouts glyphicon-arrow-right" aria-hidden="true"></span></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    @*Final de la segunda habitación.*@
+
+                    @*  tercer habitación *@
+                    <div class="col-md-4 col-sm-4 details-grid agileits w3layouts details-grid-1 wow slideInUp">
+                        <div class=" details-grid1 agileits w3layouts">
+                            <div class="details-grid-image agileits w3layouts">
+
+                                <div class="slider-2 agileits w3layouts" style="width: 100%">
+                                    <ul class="rslides agileits w3layouts" id="slider2">
+                                        <li>
+                                            <img src="../../images/project-3.jpg" alt="Agileits W3layouts">
+                                        </li>
+                                        <li>
+                                            <img src="../../images/project-6.jpg" alt="Agileits W3layouts">
+                                        </li>
+                                        <li>
+                                            <img src="../../images/project-1.jpg" alt="Agileits W3layouts">
+                                        </li>
+                                        <li>
+                                            <img src="../../images/project-7.jpg" alt="Agileits W3layouts">
+                                        </li>
+                                        <li>
+                                            <img src="../../images/project-2.jpg" alt="Agileits W3layouts">
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="details-grid-info agileits w3layouts">
+                                <h2 class="h2-habitacion">Habitación principal</h2>
+                                <div class="h4-underline wow agileits w3layouts slideInLeft animated ma"></div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et.</p>
+                            </div>
+                            <a class="btn btn-primary wow agileits w3layouts fadeInLeft" href="/Habitaciones/HabitacionGeneral">Detalles<span class="glyphicon agileits w3layouts glyphicon-arrow-right" aria-hidden="true"></span></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    @*Final de la tercer habitación.*@
+                    <div class="clearfix"></div>
+                </div>
+                <a class="btn btn-success btn-lg ma-top" href="/Habitaciones/HabitacionGeneral">Ver mas <span class="glyphicon glyphicon-arrow-right"></span></a>
+            </div>
+        </div>
+        <!-- //Habitaciones -->
+        
+        
+        <!-- Footer -->
+        <div class="footer agileits w3layouts">
+            <div class="container">
+
+                <div class="col-md-12 col-sm-12 agileits w3layouts footer-grids">
+                    <div class="col-md-12 col-sm-12 footer-grid agileits w3layouts footer-grid-1 wow fadeInUp">
+                        
+                        <MARQUEE class="img-publicidad-footer">
+                            <img src="../../images/project-4.jpg">
+                            <img src="../../images/project-4.jpg">
+                            <img src="../../images/project-4.jpg">
+                            <img src="../../images/project-4.jpg">
+                        </MARQUEE>
+
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 footer-grids agileits w3layouts copyright wow fadeInUp">
+                    <p>&copy; 2017 High Garden Resort</p>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+        <!-- //Footer -->
+
+    </body>
+</html>
+
+
+
+<!-- Custom-JavaScript-File-Links -->
+<!-- Default-JavaScript -->
+<script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+<!-- Bootstrap-JavaScript -->
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- Animate.CSS-JavaScript -->
+<script src="../../js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<!-- //Animate.CSS-JavaScript -->
+<!-- Slider-JavaScript -->
+<script src="../../js/responsiveslides.min.js"></script>
+<script>
+    $(function () {
+        $("#slider1, #slider2, #slider3, #slider4").responsiveSlides({
+            auto: true,
+            nav: true,
+            speed: 1500,
+            namespace: "callbacks",
+            pager: true,
+        });
+    });
+</script>
+<!-- //Slider-JavaScript -->
+<!-- Slide-To-Top JavaScript (No-Need-To-Change) -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 100,
+            easingType: 'linear'
+        };
+        $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+</script>
+<a href="#" id="toTop" class="agileits w3layouts" style="display: block;"> <span id="toTopHover" style="opacity: 0;"> </span></a>
+<!-- //Slide-To-Top JavaScript -->
+<!-- Smooth-Scrolling-JavaScript -->
+<script type="text/javascript" src="../../js/move-top.js"></script>
+<script type="text/javascript" src="../../js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll, .navbar li a, .footer li a").click(function (event) {
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+        });
+    });
+</script>
+<!-- //Smooth-Scrolling-JavaScript -->
+<!-- //Custom-JavaScript-File-Links -->
+
