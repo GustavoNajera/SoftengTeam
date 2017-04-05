@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SoftengTeam.Business;
+using SoftengTeam.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +13,9 @@ namespace SoftengTeam.Controllers
         // GET: Galeria
         public ActionResult Galeria()
         {
-            return View();
+            ImagenBusiness imagenBusiness = new ImagenBusiness();
+            List<Imagen> imagenes = imagenBusiness.obtenerImagenes();
+            return View(imagenes);
         }
     }
 }

@@ -35,12 +35,11 @@
     </div>
 
     <div id="links" class="links">
-    <a href="../../images/booking.jpg" title="Libro">
-    </a>
-    <a href="../../images/cuisines.jpg" title="Cocinas">
-    </a>
-    <a href="../../images/awards.jpg" title="Premios">
-    </a>
+        @foreach (var imagen in Model)
+        {
+            <a href="../../images/@imagen.nombreImagen" title="">
+            </a>
+        }
     </div>
     <!-- Rooms -->
    
