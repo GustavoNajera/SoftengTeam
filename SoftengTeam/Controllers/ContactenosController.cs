@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SoftengTeam.Business;
+using SoftengTeam.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +13,27 @@ namespace SoftengTeam.Controllers
         // GET: Contactenos
         public ActionResult Contactenos()
         {
-            return View();
+
+            HotelBusiness hotelBusiness = new HotelBusiness();
+            List<Hotel> hoteles = hotelBusiness.obtenerHotelesBusiness();
+
+            foreach(Hotel hotel in hoteles)
+            {
+                ViewData["descripcion"] = hotel.SobreNosotrosHotel+"";
+            }
+            
+
+            ImagenBusiness imagenBusiness = new ImagenBusiness();
+            List<Imagen> imagenes = imagenBusiness.obtenerImagenes();
+            return View(imagenes);
+            /*
+          
+            return View(hoteles);
+            
+         
+        
+            */
+
         }
     }
 }

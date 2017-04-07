@@ -5,7 +5,7 @@
 <!-- Banner -->
 <div class="banner agileits w3layouts">
     <img src="../../images/banner.jpg" alt="Agileits W3layouts">
-    <h1 class="wow agileits w3layouts fadeInDown">BOOKING & CONTACT</h1>
+    <h1 class="wow agileits w3layouts fadeInDown">Sobre nosotros</h1>
 </div>
 <!-- //Banner -->
 	</div>
@@ -15,16 +15,62 @@
     <div class="container">
 
         <div class="col-md-6 col-sm-6 agileits w3layouts location-grids location-grids-1 wow slideInLeft">
-            <h3>Where We Are</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>"¿Quiénes somos?"</h3>
+            <p>@ViewData["descripcion"]</p>
+          
         </div>
-
         <div class="col-md-6 col-sm-6 agileits w3layouts location-grids location-grids-2 wow slideInRight">
             <img src="../../images/location.jpg" alt="Agileits W3layouts">
+
         </div>
+
         <div class="clearfix"></div>
 
     </div>
+    <!-- //Header inicio  Link-->
+    <link rel="stylesheet" href="../../css/blueimp-gallery.min.css">
+    <div class="rooms agileits w3layouts">
+        <div class="container">
+
+            <div class="rooms-grids agileits w3layouts">
+                <div class="rooms-grid agileits w3layouts rooms-grid-1 wow fadeInRight">
+                    <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+                        <div class="slides"></div>
+                        <h3 class="title"></h3>
+                        <a class="prev">‹</a>
+                        <a class="next">›</a>
+                        <a class="play-pause"></a>
+                        <ol class="indicator"></ol>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="links" class="links">
+        @foreach (var imagenes in Model)
+            {
+            <a href="../../images/@imagenes.nombreImagen" title="">
+            </a>
+        }
+    </div>
+    <!-- Rooms -->
+    <!-- FOOTER -->
+    <!--Galeria-->
+
+    <script type="text/javascript" src="../../js/blueimp-gallery.min.js"></script>
+
+
+    <script>
+        blueimp.Gallery(
+            document.getElementById('links').getElementsByTagName('a'),
+            {
+                container: '#blueimp-gallery-carousel',
+                carousel: true
+            }
+        );
+    </script>
 </div>
 <!-- //Location -->
 <!-- Booking -->
